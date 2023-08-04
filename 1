@@ -1,0 +1,32 @@
+/**
+ * This module uses the os module to malipulate
+ * baccrie
+ * return - :
+ *
+ */
+
+fs = require('fs');
+fs.mkdir('./Students', (err) => {
+	if (err) {
+	  console.log(err);
+	}
+	else {
+	  console.log('Directory Successfully created');
+	}
+});
+
+/**
+ * creates a new file
+ * baccrie
+ * return tmp
+ */
+
+fs.open('./Students/user.js', (err, file) => {
+	if (err) {
+	  console.log('error creating file');
+	}
+	else {
+	  console.log('File has been created')
+	}
+}
+)
